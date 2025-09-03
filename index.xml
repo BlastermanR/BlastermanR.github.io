@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homepage on Ryan Massie</title><link>https://ryanbmassie.com/</link><description>Recent content in Homepage on Ryan Massie</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2025 Ryan Massie</copyright><lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanbmassie.com/index.xml" rel="self" type="application/rss+xml"/><item><title>A High-Performance Hardware Design for Computing Bézout’s Coefficients Using Extended Stein’s Algorithm</title><link>https://ryanbmassie.com/showcase/binarygcdpaper/</link><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><guid>https://ryanbmassie.com/showcase/binarygcdpaper/</guid><description>Summary</description></item><item><title>Resume</title><link>https://ryanbmassie.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanbmassie.com/resume/</guid><description>&lt;p>Explore my qualifications, experiences, and the skills I bring to future opportunities!&lt;/p>
+&lt;script type="text/javascript" src= '/js/pdf-js/build/pdf.js'>&lt;/script>
+&lt;style>
+.embed-pdf-container {
+position: relative;
+width: 100%;
+height: auto;
+min-height: 20vh;
+display: flex;
+justify-content: center;
+}
+.pdf-frame { position:relative; display:block; width:100%; max-width:1200px; }
+.pdf-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 160%;
+height: auto !important;
+display: none;
+margin: 0 auto;
+max-width: 160%;
+}
+#the-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+.pdf-loadingWrapper {
+display: none;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 350px;
+}
+.pdf-loading {
+display: inline-block;
+width: 50px;
+height: 50px;
+border: 3px solid #d2d0d0;;
+border-radius: 50%;
+border-top-color: #383838;
+animation: spin 1s ease-in-out infinite;
+-webkit-animation: spin 1s ease-in-out infinite;
+}
+.embed-pdf-center-viewport {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#overlayText {
+position: absolute;
+top: -20px;
+left: 80%;
+transform: translateX(-50%);
+word-wrap: break-word;
+display: flex;
+justify-content: center;
+z-index: 5;
+pointer-events: none;
+}
+#overlayText a {
+pointer-events: auto;
+color: #000;
+margin: 0;
+background-color: #eeeeee;
+padding: 0.3em 1em;
+border: solid 2px;
+border-radius: 12px;
+border-color: #00000030;
+text-decoration: none;
+box-shadow: 0 2px 4px rgba(0,0,0,.15);
+transition: background-color .15s ease, box-shadow .15s ease;
+}
+#overlayText a:hover, #overlayText a:focus { background:#f5f5f5; box-shadow:0 3px 6px rgba(0,0,0,.25); }
+#overlayText svg {
+height: clamp(1em, 2vw, 1.4em);
+width: clamp(1em, 2vw, 1.4em);
+}
+@keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+&lt;/style>&lt;div class="embed-pdf-container " id="embed-pdf-container-28d83034">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-28d83034">
+&lt;div class="pdf-loading" id="pdf-loading-28d83034">&lt;/div>
+&lt;/div>
+&lt;div class="pdf-frame" id="pdf-frame-28d83034">
+&lt;div id="overlayText">
+&lt;a href="https://ryanbmassie.com/files/resume.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-28d83034">&lt;/canvas>
+&lt;/div>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-28d83034">
+&lt;button id="pdf-prev-28d83034">Previous&lt;/button>
+&lt;button id="pdf-next-28d83034">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-28d83034">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-28d83034">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-28d83034" href="https://ryanbmassie.com/files/resume.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-28d83034" href="https://ryanbmassie.com/files/resume.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/files\/resume.pdf';
+var hidePaginator = 'true' === 'true';
+var hideLoader = '' === 'true';
+var selectedPageNum = parseInt('') || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/ryanbmassie.com\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-28d83034'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById('pdf-paginator-28d83034'),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-28d83034');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-28d83034').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-28d83034').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-28d83034').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-28d83034').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script></description></item></channel></rss>
